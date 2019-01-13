@@ -4,6 +4,10 @@ from conans import ConanFile, CMake
 class DepConan(ConanFile):
     name = "dep"
     version = "version"
+
+    scm = {"type": "git",
+           "url": "auto",
+           "revision": "auto"}
     
     settings = "os", "compiler", "build_type", "arch"
     options = {"shared": [True, False]}
