@@ -14,7 +14,6 @@ class DepConan(ConanFile):
     default_options = "shared=False"
     
     generators = "cmake"
-    exports_sources = "src/*"
 
     def build(self):
         cmake = CMake(self)
